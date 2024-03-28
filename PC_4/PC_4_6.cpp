@@ -6,9 +6,9 @@ object’s mass, you can calculate its weight in newtons with the following form
 weight = mass x 9.8
 
 Write a program that asks the user to enter an object’s mass, and then calculates and displays
-its weight. If the object weighs more than 1000 newtons, display a message indicating that
-it is too heavy. If the object weighs less than 10 newtons, display a message indicating that
-the object is too light.
+its weight. If the object weighs more than 750 newtons, display a message indicating that
+it is too heavy. If the object weighs less than 50 newtons, display a message indicating that
+the object is too light
 */
 
 #include <iostream>
@@ -28,9 +28,9 @@ int main()
 
 	// Display weight and messages.
 	cout << "This object weights " << Weight << " newtons.\n";
-	if (Weight > 1000)
+	if (Weight > 750)
 		cout << "It is too heavy!\n";
-	else if (Weight < 10)
+	else if (Weight < 50)
 		cout << "It is too light!\n";	
 	return 0;
 }
